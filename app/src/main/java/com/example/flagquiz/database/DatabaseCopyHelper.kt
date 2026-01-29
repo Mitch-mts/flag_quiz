@@ -10,7 +10,7 @@ import java.io.FileOutputStream
 import java.io.IOException
 import java.io.OutputStream
 
-class DatabaseCopyHelper(context: Context) : SQLiteOpenHelper(context,DB_NAME,null,1) {
+class DatabaseCopyHelper(context: Context) : SQLiteOpenHelper(context,DB_NAME,null,3) {
 
     var DB_PATH : String? = null
     var myContext : Context? = null

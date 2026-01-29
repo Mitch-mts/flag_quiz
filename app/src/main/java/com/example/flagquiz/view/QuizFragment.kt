@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
@@ -41,12 +40,12 @@ class QuizFragment : Fragment() {
         val dao = FlagsDao()
         flagList = dao.getRandomTenRecords(DatabaseCopyHelper(requireActivity()))
 
-        for (flag in flagList) {
-            Log.d("flags", flag.id.toString())
-            Log.d("flags", flag.countryName)
-            Log.d("flags", flag.flagName)
-            Log.d("flags", "-------------------------")
-        }
+//        for (flag in flagList) {
+//            Log.d("flags", flag.id.toString())
+//            Log.d("flags", flag.countryName)
+//            Log.d("flags", flag.flagName)
+//            Log.d("flags", "-------------------------")
+//        }
 
         showData()
 
@@ -70,7 +69,8 @@ class QuizFragment : Fragment() {
         quizFragmentBinding.btnNext.setOnClickListener {
             questionNumber++
 
-            if(questionNumber > 5) {
+            val dataSize = flagList.size - 1
+            if(questionNumber > dataSize) {
                 if(!optionControl) {
                     emptyNumber++
                 }
