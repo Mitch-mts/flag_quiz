@@ -2,10 +2,10 @@ package com.example.flagquiz.view
 
 import android.graphics.Color
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.flagquiz.R
 import com.example.flagquiz.databinding.FragmentResultBinding
@@ -48,19 +48,19 @@ class ResultFragment : Fragment() {
         val barDataSetCorrect = BarDataSet(barEntriesArrayListCorrect, "Correct").apply {
             color = Color.GREEN
             valueTextSize = 24F
-            setValueTextColors(arrayListOf(Color.BLACK))
+            valueTextColor = R.color.chart_text_color
         }
 
         val barDataSetEmpty = BarDataSet(barEntriesArrayListEmpty, "Empty").apply {
             color = Color.BLUE
             valueTextSize = 24F
-            setValueTextColors(arrayListOf(Color.BLACK))
+            valueTextColor = R.color.chart_text_color
         }
 
         val barDataSetWrong = BarDataSet(barEntriesArrayListWrong, "Wrong").apply {
             color = Color.RED
             valueTextSize = 24F
-            setValueTextColors(arrayListOf(Color.BLACK))
+            valueTextColor = R.color.chart_text_color
         }
 
         val barData = BarData(barDataSetCorrect, barDataSetEmpty, barDataSetWrong)

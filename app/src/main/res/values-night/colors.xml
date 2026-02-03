@@ -5,5 +5,5 @@
     <color name="my_background">#186CB1</color>
     <color name="purple">#9337AD</color>
     <color name="text_color">#FFFFFFFF</color>
-    <color name="chart_text_color">#FF000000</color>
+    <color name="chart_text_color">#FFFFFFFF</color>
 </resources>

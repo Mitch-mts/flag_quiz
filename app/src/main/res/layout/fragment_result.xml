@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/my_background"
     tools:context=".view.ResultFragment">
 
 
@@ -15,7 +16,7 @@
         android:gravity="center"
         android:padding="15dp"
         android:text="@string/your_result"
-        android:textColor="@color/white"
+        android:textColor="@color/text_color"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,9 +40,10 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="30dp"
-        android:backgroundTint="@color/my_background"
+        android:backgroundTint="@color/purple"
         android:text="@string/button_again"
         android:textSize="24sp"
+        android:textColor="@color/text_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result_chart" />
@@ -53,9 +55,10 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="30dp"
-        android:backgroundTint="@color/my_background"
+        android:backgroundTint="@color/purple"
         android:text="@string/button_exit"
         android:textSize="24sp"
+        android:textColor="@color/text_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnNewQuiz" />
