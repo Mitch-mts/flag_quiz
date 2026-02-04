@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.flagquiz.R
@@ -45,26 +46,34 @@ class ResultFragment : Fragment() {
         barEntriesArrayListEmpty.add(BarEntry(1F, emptyNumber))
         barEntriesArrayListWrong.add(BarEntry(2F, wrongNumber))
 
+        val chartTextColor = ContextCompat.getColor(requireContext(), R.color.chart_text_color)
+
         val barDataSetCorrect = BarDataSet(barEntriesArrayListCorrect, "Correct").apply {
             color = Color.GREEN
             valueTextSize = 24F
-            valueTextColor = R.color.chart_text_color
+            valueTextColor = chartTextColor
         }
 
         val barDataSetEmpty = BarDataSet(barEntriesArrayListEmpty, "Empty").apply {
             color = Color.BLUE
             valueTextSize = 24F
-            valueTextColor = R.color.chart_text_color
+            valueTextColor = chartTextColor
         }
 
         val barDataSetWrong = BarDataSet(barEntriesArrayListWrong, "Wrong").apply {
             color = Color.RED
             valueTextSize = 24F
-            valueTextColor = R.color.chart_text_color
+            valueTextColor = chartTextColor
         }
 
         val barData = BarData(barDataSetCorrect, barDataSetEmpty, barDataSetWrong)
-        resultFragmentBinding.resultChart.data = barData
+
+        resultFragmentBinding.resultChart.apply {
+            legend.textColor = chartTextColor
+            data = barData
+        }
+
+//        resultFragmentBinding.resultChart.data = barData
 
 
         resultFragmentBinding.btnNewQuiz.setOnClickListener {
