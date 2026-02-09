@@ -4,8 +4,8 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:statusBarColor">@color/my_background</item>
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/flags</item>
-        <item name="android:windowSplashScreenIconBackgroundColor">@color/purple</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="31">@drawable/flags</item>
+        <item name="android:windowSplashScreenIconBackgroundColor" tools:targetApi="31">@color/purple</item>
     </style>
 
 
