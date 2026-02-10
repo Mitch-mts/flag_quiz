@@ -1,8 +1,7 @@
-package com.example.flagquiz.view
+package mts.mtech.flagquiz.view
 
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,10 +10,10 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import com.example.flagquiz.R
-import com.example.flagquiz.database.FlagsDao
 import com.example.flagquiz.databinding.FragmentQuizBinding
-import com.example.flagquiz.model.FlagsModel
-import com.techmania.flagquizwithsqlitedemo.DatabaseCopyHelper
+import mts.mtech.flagquiz.database.DatabaseCopyHelper
+import mts.mtech.flagquiz.database.FlagsDao
+import mts.mtech.flagquiz.model.FlagsModel
 
 class QuizFragment : Fragment() {
     lateinit var quizFragmentBinding: FragmentQuizBinding

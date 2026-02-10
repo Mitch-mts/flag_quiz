@@ -1,4 +1,4 @@
-package com.example.flagquiz
+package mts.mtech.flagquiz
 
 import org.junit.Test
 

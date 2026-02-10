@@ -1,4 +1,4 @@
-package com.example.flagquiz.model
+package mts.mtech.flagquiz.model
 
 data class FlagsModel(
     val id: Int,

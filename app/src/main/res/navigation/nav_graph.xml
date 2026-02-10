@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.flagquiz.view.HomeFragment"
+        android:name="mts.mtech.flagquiz.view.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/quizFragment"
-        android:name="com.example.flagquiz.view.QuizFragment"
+        android:name="mts.mtech.flagquiz.view.QuizFragment"
         android:label="fragment_quiz"
         tools:layout="@layout/fragment_quiz" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
-        android:name="com.example.flagquiz.view.ResultFragment"
+        android:name="mts.mtech.flagquiz.view.ResultFragment"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
         <argument

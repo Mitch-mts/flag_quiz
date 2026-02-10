@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/my_background"
     android:orientation="vertical"
-    tools:context=".view.QuizFragment">
+    tools:context="mts.mtech.flagquiz.view.QuizFragment">
 
 
     <LinearLayout
@@ -99,7 +99,7 @@
         android:id="@+id/imagaeViewFlag"
         android:layout_width="350dp"
         android:layout_height="200dp"
-        android:src="@drawable/zim"
+        android:src="@drawable/mexico"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

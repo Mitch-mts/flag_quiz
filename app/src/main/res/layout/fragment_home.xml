@@ -7,7 +7,7 @@
     android:background="@color/my_background"
     android:orientation="vertical"
     android:textAlignment="center"
-    tools:context=".view.HomeFragment">
+    tools:context="mts.mtech.flagquiz.view.HomeFragment">
 
 
     <TextView

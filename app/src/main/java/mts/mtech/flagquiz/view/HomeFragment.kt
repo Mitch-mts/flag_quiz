@@ -1,4 +1,4 @@
-package com.example.flagquiz.view
+package mts.mtech.flagquiz.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,9 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.flagquiz.R
 import com.example.flagquiz.databinding.FragmentHomeBinding
-import com.techmania.flagquizwithsqlitedemo.DatabaseCopyHelper
+import mts.mtech.flagquiz.database.DatabaseCopyHelper
 
 class HomeFragment : Fragment() {
     lateinit var fragmentHomeBinding: FragmentHomeBinding

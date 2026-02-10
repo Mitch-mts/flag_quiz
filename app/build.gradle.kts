@@ -12,7 +12,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.flagquiz"
+        applicationId = "com.mtech.flagquiz"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

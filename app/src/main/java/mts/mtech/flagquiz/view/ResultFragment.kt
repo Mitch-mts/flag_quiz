@@ -1,4 +1,4 @@
-package com.example.flagquiz.view
+package mts.mtech.flagquiz.view
 
 import android.graphics.Color
 import android.os.Bundle

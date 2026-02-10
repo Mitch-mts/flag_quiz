@@ -1,10 +1,8 @@
-package com.example.flagquiz.database
+package mts.mtech.flagquiz.database
 
-import android.R
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
-import com.example.flagquiz.model.FlagsModel
-import com.techmania.flagquizwithsqlitedemo.DatabaseCopyHelper
+import mts.mtech.flagquiz.model.FlagsModel
 
 class FlagsDao {
 

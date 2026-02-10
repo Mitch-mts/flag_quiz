@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FlagQuiz">
         <activity
-            android:name=".view.MainActivity"
+            android:name="mts.mtech.flagquiz.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
